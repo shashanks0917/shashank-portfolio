@@ -150,4 +150,51 @@ section {
 <section id="skills">
 <section id="projects">
 <section id="contact" class="contact">
+/* ---------- FINAL POLISH ---------- */
+
+header h1 {
+    letter-spacing: 1px;
+}
+
+header p {
+    font-weight: 500;
+}
+
+section {
+    animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #2563eb;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.projects-grid {
+    margin-top: 10px;
+}
+
+.project-card {
+    border: 1px solid #e5e7eb;
+}
+
+footer {
+    background: #f1f5f9;
+    margin-top: 40px;
+}
 
